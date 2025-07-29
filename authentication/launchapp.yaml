@@ -1,0 +1,7 @@
+appId: ke.whiskyshop.app
+
+---
+
+- launchApp
+- assertVisible: "Home"
+    
