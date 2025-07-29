@@ -1,0 +1,39 @@
+appId: ke.whiskyshop.app
+---
+  - launchApp
+  - assertVisible: "Home"
+  - assertVisible: "Account"
+  - tapOn: "Account"
+  - assertVisible: "Login or Register"
+  - tapOn: "Login or Register"
+  - assertVisible: "Login"
+  - assertVisible: "Don't have an account? Register"
+  - tapOn: "Don't have an account? Register"
+  - assertVisible: "Register"
+  - tapOn:
+      id: "username-input"
+  - eraseText
+  - inputText: "john"
+  - tapOn:
+      id: "email-input"
+  - eraseText
+  - inputText: "john@email.com"
+  - tapOn:
+      id: "first-name-input"
+  - eraseText
+  - inputText: "Johnny2"
+  - tapOn:
+      id: "last-name-input"
+  - eraseText
+  - inputText: "Doe23"
+  - tapOn:
+      id: "password-input"
+  - eraseText
+  - inputText: "John123"
+  - tapOn:
+      id: "toggle-password-visibility"
+  - tapOn:
+      id: "submit-button"
+  - assertVisible: "Johnny2 Doe23"
+      
+      
